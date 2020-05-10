@@ -17,7 +17,7 @@ function gsDashboards(serializedData, savePositionURL) {
     var items = GridStack.Utils.sort(serializedData);
     grid.batchUpdate();
     items.forEach(function (node, idx) {
-      grid.addWidget(`<div><div class="grid-stack-item-content" id="ga-${node.id}"></div></div>`, node);
+      grid.addWidget('<div><div class="grid-stack-item-content" id="ga-${node.id}"></div></div>', node);
     });
     grid.commit();
     $('.grid-stack-item-content').each(function(i,e) {
